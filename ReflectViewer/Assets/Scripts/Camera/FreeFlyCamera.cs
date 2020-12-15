@@ -34,7 +34,7 @@ namespace UnityEngine.Reflect
         float m_Acceleration = 10.0f;
         float m_WaitingDeceleration = 40.0f;
 
-        Vector3 m_DesiredLookAt;
+        protected Vector3 m_DesiredLookAt;
         Vector3 m_DesiredPosition;
         Vector2 m_DesiredRotationEuler;
         Quaternion m_DesiredRotation;

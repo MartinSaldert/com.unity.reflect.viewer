@@ -15,21 +15,23 @@ namespace Unity.Reflect.Viewer.UI
         [SerializeField] float m_Tolerance;
 #pragma warning restore CS0649
 
-        readonly List<Tuple<GameObject, RaycastHit>> m_Results = new List<Tuple<GameObject, RaycastHit>>();
+        protected readonly List<Tuple<GameObject, RaycastHit>> m_Results = new List<Tuple<GameObject, RaycastHit>>();
 
         HighlightFilterInfo m_CurrentHighlightFilter;
         ObjectSelectionInfo m_CurrentObjectSelectionInfo;
-        GameObject m_CurrentSelectedGameObject;
+        [HideInInspector]
+        public GameObject m_CurrentSelectedGameObject;
 
         Vector2? m_PreviousScreenPoint;
-        int m_CurrentLayer;
+        public int m_CurrentLayer;
         bool m_SelectMode;
         bool m_Pressed;
         ToolState? m_CachedToolState;
         NavigationState? m_CachedNavigationState;
 
-        ISpatialPicker<Tuple<GameObject, RaycastHit>> m_ObjectPicker;
-        Camera m_Camera;
+        [HideInInspector]
+        public ISpatialPicker<Tuple<GameObject, RaycastHit>> m_ObjectPicker;
+        protected Camera m_Camera;
 
         void Awake()
         {
@@ -61,6 +63,7 @@ namespace Unity.Reflect.Viewer.UI
 
         void OnProjectStateDataChanged(UIProjectStateData data)
         {
+            print("Project state data changed");
             m_ObjectPicker = data.objectPicker;
             if (data.objectSelectionInfo != m_CurrentObjectSelectionInfo)
             {
@@ -142,12 +145,12 @@ namespace Unity.Reflect.Viewer.UI
             return false;
         }
 
-        static void SetLayer(GameObject obj, string layerName)
+        public static void SetLayer(GameObject obj, string layerName)
         {
             SetLayer(obj, LayerMask.NameToLayer(layerName));
         }
 
-        static void SetLayer(GameObject obj, int layer)
+        public static void SetLayer(GameObject obj, int layer)
         {
             obj.SetLayerRecursively(layer);
         }
@@ -181,16 +184,28 @@ namespace Unity.Reflect.Viewer.UI
                     }
                 }
 
+                print("Picking: " + m_ObjectPicker);
                 m_ObjectPicker.Pick(m_Camera.ScreenPointToRay(screenPoint), m_Results);
                 // send a copy of the list to preserve previous selection info
                 info.selectedObjects = m_Results.Select(x => x.Item1).ToList();
+
                 info.currentIndex = 0;
             }
 
             m_PreviousScreenPoint = screenPoint;
             UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SelectObjects, info));
         }
+
+        protected List<RaycastHit> ResultSelect()
+        {
+            return m_Results.Select(x => x.Item2).ToList();
+        }
+
+
+
+
     }
+    
 }
 
 
