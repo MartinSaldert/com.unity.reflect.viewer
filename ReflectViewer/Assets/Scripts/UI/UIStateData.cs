@@ -80,7 +80,10 @@ namespace Unity.Reflect.Viewer.UI
         PanTool = 4,
         ClippingTool = 5,
         SunstudyTool = 6,
-        MeasureTool = 6
+        MeasureTool = 1304,
+        SetPivot = 1301,
+        HideStuff = 1302,
+        GhostAll = 1303
     }
 
     public enum StatusMessageLevel

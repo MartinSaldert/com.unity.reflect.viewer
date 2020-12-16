@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using SharpFlux;
 using UnityEngine;
 using UnityEngine.Reflect.Viewer;
@@ -10,34 +10,35 @@ namespace Unity.Reflect.Viewer.UI
     {
 #pragma warning disable CS0649
         [SerializeField]
-        ToolButton m_OrbitButton;
+        protected ToolButton m_OrbitButton;
 
         [SerializeField]
-        ToolButton m_LookAroundButton;
+        protected ToolButton m_LookAroundButton;
 
         [SerializeField]
-        ToolButton m_SelectButton;
+        public ToolButton m_SelectButton;
 
         [SerializeField]
-        ToolButton m_SunStudyButton;
+        protected ToolButton m_SunStudyButton;
 
         [SerializeField]
-        Sprite m_OrbitImage;
+        protected Sprite m_OrbitImage;
         [SerializeField]
-        Sprite m_ZoomImage;
+        protected Sprite m_ZoomImage;
         [SerializeField]
-        Sprite m_PanImage;
+        protected Sprite m_PanImage;
 
 #pragma warning restore CS0649
 
-        ToolType m_CurrentOrbitButtonType;
+        protected ToolType m_CurrentOrbitButtonType;
 
-        bool m_ToolbarsEnabled;
-        ToolState m_CurrentToolState;
+        protected bool m_ToolbarsEnabled;
+        protected ToolState m_CurrentToolState;
 
-        SpatialSelector m_ObjectSelector;
+        [HideInInspector]
+        public SpatialSelector m_ObjectSelector;
 
-        void Awake()
+        protected virtual void Awake()
         {
             UIStateManager.stateChanged += OnStateDataChanged;
 
@@ -50,7 +51,7 @@ namespace Unity.Reflect.Viewer.UI
             m_ObjectSelector = new SpatialSelector();
         }
 
-        void OnStateDataChanged(UIStateData data)
+        protected virtual void OnStateDataChanged(UIStateData data)
         {
             if (m_ToolbarsEnabled != data.toolbarsEnabled)
             {
@@ -146,7 +147,7 @@ namespace Unity.Reflect.Viewer.UI
             UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SetToolState, toolState));
         }
 
-        void OnOrbitButtonClicked()
+        public void OnOrbitButtonClicked()
         {
             // Helpmode
             if (HelpDialogController.SetHelpID(HelpModeEntryID.OrbitSelect)) return;
