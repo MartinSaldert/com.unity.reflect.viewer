@@ -13,5 +13,20 @@ MonoBehaviour:
   m_Name: MaterialOverrider
   m_EditorClassIdentifier: 
   materialOverrides:
-  - property: Aluminum
-    material: {fileID: 2100000, guid: 6fe6dafdbb51db740b1b99591293b5df, type: 2}
+  - property: Glass
+    material: {fileID: 497150855381573258, guid: 0b6f251b98471f64cbf51cfb05b8d516,
+      type: 3}
+  - property: Steel
+    material: {fileID: 5867698853317176381, guid: 1226806ef11d2894d81261f1f5f68f72,
+      type: 3}
+  - property: Stainless steel
+    material: {fileID: 3142238835416639629, guid: 75588af9b93cc76448d4fd9dbcdbf3fa,
+      type: 3}
+  - property: Iron
+    material: {fileID: -3573851734820868402, guid: 1a9bf041a63ce0740b8643841b425eb9,
+      type: 3}
+  - property: Copper
+    material: {fileID: -8120370872677372087, guid: 1ea0331d2651f8f4f83c7e992d1e7c49,
+      type: 3}
+  - property: Aluminium
+    material: {fileID: 0}
