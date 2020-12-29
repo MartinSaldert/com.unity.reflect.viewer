@@ -14,20 +14,25 @@ ScriptedImporter:
   - graphLabel: SmoothMetal
     prototypeName: SmoothMetal
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://SmoothMetal\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"3728126962\" type=\"8\" value=\"9,9\" />\n
       </sbspreset>\n"
-    shaderName: Universal Render Pipeline/Autodesk Interactive/Autodesk Interactive
+    shaderName: Universal Render Pipeline/Lit
     materialProperties:
-      shader: {fileID: 4800000, guid: 0e9d5a909a1f7e84882a534d0d11e49f, type: 3}
-      shaderKeywords: _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP
+      shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+      shaderKeywords: _HEIGHTMAP _METALLICSPECGLOSSMAP _NORMALMAP _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
       customRenderQueue: -1
       texEnvs:
+      - name: _BaseMap
+        texture: {fileID: 6862007254748343019, guid: 124648cb86ac6cc469d5b65c630f114b,
+          type: 3}
+        scale: {x: 1, y: 1}
+        offset: {x: 0, y: 0}
       - name: _BumpMap
         texture: {fileID: -1653743167044931742, guid: 124648cb86ac6cc469d5b65c630f114b,
           type: 3}
@@ -55,31 +60,57 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       floats:
+      - name: _AlphaClip
+        float: 0
+      - name: _Blend
+        float: 0
+      - name: _BumpScale
+        float: 1
+      - name: _Cull
+        float: 2
+      - name: _Cutoff
+        float: 0.5
+      - name: _DstBlend
+        float: 0
+      - name: _EnvironmentReflections
+        float: 1
+      - name: _GlossMapScale
+        float: 0
       - name: _Glossiness
-        float: 0.1
+        float: 0
+      - name: _GlossyReflections
+        float: 0
       - name: _Metallic
+        float: 0
+      - name: _OcclusionStrength
         float: 1
-      - name: _UseAoMap
+      - name: _QueueOffset
         float: 0
-      - name: _UseColorMap
-        float: 0
-      - name: _UseEmissiveMap
-        float: 0
-      - name: _UseMetallicMap
-        float: 0
-      - name: _UseNormalMap
+      - name: _ReceiveShadows
         float: 1
-      - name: _UseRoughnessMap
+      - name: _Smoothness
+        float: 1
+      - name: _SmoothnessTextureChannel
         float: 0
+      - name: _SpecularHighlights
+        float: 1
+      - name: _SrcBlend
+        float: 1
+      - name: _Surface
+        float: 0
+      - name: _WorkflowMode
+        float: 1
+      - name: _ZWrite
+        float: 1
       colors:
+      - name: _BaseColor
+        color: {r: 1, g: 1, b: 1, a: 1}
       - name: _Color
         color: {r: 1, g: 1, b: 1, a: 1}
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
-      - name: _UvOffset
-        color: {r: 0, g: 0, b: 0, a: 0}
-      - name: _UvTiling
-        color: {r: 1, g: 1, b: 0, a: 0}
+      - name: _SpecColor
+        color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     outputDescList:
     - outputName: baseColor
       identifier: basecolor
@@ -184,16 +215,11 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    - label: StandAlone
-      bOverride: 1
-      bLockRatio: 1
-      textureWidth: 512
-      textureHeight: 512
-      textureFormatMode: 0
-      normalCompressed: 1
-      bGenerateOnLoad: 1
     material: {fileID: 8477011861707683303, guid: 124648cb86ac6cc469d5b65c630f114b,
       type: 3}
     generatedTextures:
+    - {fileID: 6862007254748343019, guid: 124648cb86ac6cc469d5b65c630f114b, type: 3}
     - {fileID: -1653743167044931742, guid: 124648cb86ac6cc469d5b65c630f114b, type: 3}
+    - {fileID: 3734833127020317161, guid: 124648cb86ac6cc469d5b65c630f114b, type: 3}
     - {fileID: 8165666512762803713, guid: 124648cb86ac6cc469d5b65c630f114b, type: 3}
+    - {fileID: 6605862038851270947, guid: 124648cb86ac6cc469d5b65c630f114b, type: 3}

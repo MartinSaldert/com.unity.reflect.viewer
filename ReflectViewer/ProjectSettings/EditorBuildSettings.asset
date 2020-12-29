@@ -21,5 +21,7 @@ EditorBuildSettings:
       type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: c1837a2957f925244b9eb7c13fff6cc7,
       type: 2}
+    com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: 3dc52fc313b416e41bb8f1f1bbeba0a3,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 765d7aee5e60ad14c80f0e02d1f6e4c5,
       type: 2}

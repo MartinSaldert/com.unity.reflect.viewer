@@ -14,22 +14,21 @@ ScriptedImporter:
   - graphLabel: Car Solid Paint White
     prototypeName: Car Solid Paint
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://car_solid_paint\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"2285768404\" type=\"8\" value=\"9,9\" />\n 
       <presetinput identifier=\"color\" uid=\"4268891856\" type=\"2\" value=\"1,1,1\"
-      />\n  <presetinput identifier=\"roughness\" uid=\"4268891665\" type=\"0\" value=\"0.088\"
-      />\n  <presetinput identifier=\"orange_peel\" uid=\"4268884150\" type=\"0\"
-      value=\"0.036\" />\n </sbspreset>\n"
+      />\n </sbspreset>\n"
     shaderName: Universal Render Pipeline/Lit
     materialProperties:
       shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-      shaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP
+      shaderKeywords: _GLOSSINESSMAP _HEIGHTMAP _METALLICSPECGLOSSMAP _NA_DIFFUSE
+        _NORMALMAP _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
-      customRenderQueue: -1
+      customRenderQueue: 2050
       texEnvs:
       - name: _BaseMap
         texture: {fileID: 7549044881572176540, guid: 0572ce94caae2174abc5dc42f4404106,
@@ -114,7 +113,7 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
       - name: _SpecColor
-        color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     outputDescList:
     - outputName: diffuse
       identifier: diffuse
@@ -273,18 +272,14 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    - label: StandAlone
-      bOverride: 1
-      bLockRatio: 1
-      textureWidth: 512
-      textureHeight: 512
-      textureFormatMode: 0
-      normalCompressed: 1
-      bGenerateOnLoad: 1
     material: {fileID: 3061062152298054265, guid: 0572ce94caae2174abc5dc42f4404106,
       type: 3}
     generatedTextures:
+    - {fileID: -3949870089513335405, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
     - {fileID: 7549044881572176540, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
     - {fileID: -9096904196366500962, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
     - {fileID: 2291362867156819482, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
+    - {fileID: -8143728996838944738, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
+    - {fileID: -6415672947673120277, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
     - {fileID: 7624190854402401179, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}
+    - {fileID: 9199084983265825185, guid: 0572ce94caae2174abc5dc42f4404106, type: 3}

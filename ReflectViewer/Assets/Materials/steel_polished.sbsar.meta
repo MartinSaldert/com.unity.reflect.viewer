@@ -14,32 +14,25 @@ ScriptedImporter:
   - graphLabel: Steel Polished
     prototypeName: Steel Polished
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://steel_polished\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"1069038773\" type=\"8\" value=\"9,9\" />\n 
-      <presetinput identifier=\"$randomseed\" uid=\"1758079719\" type=\"4\" value=\"1118\"
-      />\n  <presetinput identifier=\"steel_color_variation\" uid=\"1462828604\"
-      type=\"0\" value=\"0.365\" />\n  <presetinput identifier=\"steel_roughness\"
-      uid=\"1462828600\" type=\"0\" value=\"0.267\" />\n  <presetinput identifier=\"dirt\"
-      uid=\"1462828580\" type=\"0\" value=\"0.434\" />\n  <presetinput identifier=\"polish_roughness\"
-      uid=\"1462777112\" type=\"0\" value=\"0.736\" />\n  <presetinput identifier=\"erase_stain\"
-      uid=\"1462777114\" type=\"0\" value=\"0.099\" />\n  <presetinput identifier=\"luminosity\"
-      uid=\"988054798\" type=\"0\" value=\"0.918\" />\n  <presetinput identifier=\"contrast\"
-      uid=\"1164004396\" type=\"0\" value=\"0.102\" />\n </sbspreset>\n"
+      identifier=\"$outputsize\" uid=\"1069038773\" type=\"8\" value=\"9,9\" />\n
+      </sbspreset>\n"
     shaderName: Universal Render Pipeline/Lit
     materialProperties:
       shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-      shaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
+      shaderKeywords: _GLOSSINESSMAP _HEIGHTMAP _METALLICSPECGLOSSMAP _NA_DIFFUSE
+        _NORMALMAP _OCCLUSIONMAP _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
-      customRenderQueue: 2050
+      customRenderQueue: -1
       texEnvs:
       - name: _BaseMap
         texture: {fileID: 3960147641511814941, guid: 75588af9b93cc76448d4fd9dbcdbf3fa,
           type: 3}
-        scale: {x: 1000, y: 1000}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BumpMap
         texture: {fileID: 8800331965170350047, guid: 75588af9b93cc76448d4fd9dbcdbf3fa,
@@ -52,7 +45,7 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _MainTex
         texture: {instanceID: 0}
-        scale: {x: 1000, y: 1000}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
         texture: {fileID: 633330036343146294, guid: 75588af9b93cc76448d4fd9dbcdbf3fa,
@@ -120,7 +113,7 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
       - name: _SpecColor
-        color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     outputDescList:
     - outputName: diffuse
       identifier: diffuse
@@ -300,8 +293,12 @@ ScriptedImporter:
     material: {fileID: 3142238835416639629, guid: 75588af9b93cc76448d4fd9dbcdbf3fa,
       type: 3}
     generatedTextures:
+    - {fileID: -7575749170874641211, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
     - {fileID: 3960147641511814941, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
     - {fileID: 8800331965170350047, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
     - {fileID: -4572408978716400737, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
+    - {fileID: -5855416323607227813, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
+    - {fileID: 5778557445329405749, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
     - {fileID: 633330036343146294, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
+    - {fileID: 6301420470985123958, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}
     - {fileID: -5972685837532951005, guid: 75588af9b93cc76448d4fd9dbcdbf3fa, type: 3}

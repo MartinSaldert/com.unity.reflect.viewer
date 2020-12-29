@@ -14,32 +14,25 @@ ScriptedImporter:
   - graphLabel: Copper Polished
     prototypeName: Copper Polished
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://copper_polished\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"1099927767\" type=\"8\" value=\"9,9\" />\n 
-      <presetinput identifier=\"copper_color_variation\" uid=\"691627421\" type=\"0\"
-      value=\"0.652\" />\n  <presetinput identifier=\"copper_color_irregularities\"
-      uid=\"691627419\" type=\"0\" value=\"0.145\" />\n  <presetinput identifier=\"copper_roughness\"
-      uid=\"691627417\" type=\"0\" value=\"0.031\" />\n  <presetinput identifier=\"scratches\"
-      uid=\"691627407\" type=\"0\" value=\"0.232\" />\n  <presetinput identifier=\"scratches_intensity\"
-      uid=\"691627405\" type=\"0\" value=\"0.009\" />\n  <presetinput identifier=\"polish_roughness\"
-      uid=\"691620013\" type=\"0\" value=\"0.531\" />\n  <presetinput identifier=\"scratch_intensity\"
-      uid=\"691620055\" type=\"0\" value=\"0.061\" />\n  <presetinput identifier=\"channel_diffuse\"
-      uid=\"860129353\" type=\"4\" value=\"1\" />\n </sbspreset>\n"
+      identifier=\"$outputsize\" uid=\"1099927767\" type=\"8\" value=\"9,9\" />\n
+      </sbspreset>\n"
     shaderName: Universal Render Pipeline/Lit
     materialProperties:
       shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-      shaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
+      shaderKeywords: _GLOSSINESSMAP _HEIGHTMAP _METALLICSPECGLOSSMAP _NA_DIFFUSE
+        _NORMALMAP _OCCLUSIONMAP _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
-      customRenderQueue: 2050
+      customRenderQueue: -1
       texEnvs:
       - name: _BaseMap
         texture: {fileID: 2553313241031203282, guid: 1ea0331d2651f8f4f83c7e992d1e7c49,
           type: 3}
-        scale: {x: 2, y: 2}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BumpMap
         texture: {fileID: -2011546824344090589, guid: 1ea0331d2651f8f4f83c7e992d1e7c49,
@@ -52,7 +45,7 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _MainTex
         texture: {instanceID: 0}
-        scale: {x: 2, y: 2}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
         texture: {fileID: -4400431151244244659, guid: 1ea0331d2651f8f4f83c7e992d1e7c49,
@@ -120,7 +113,7 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
       - name: _SpecColor
-        color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     outputDescList:
     - outputName: diffuse
       identifier: diffuse
@@ -297,19 +290,15 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    - label: StandAlone
-      bOverride: 1
-      bLockRatio: 1
-      textureWidth: 512
-      textureHeight: 512
-      textureFormatMode: 0
-      normalCompressed: 1
-      bGenerateOnLoad: 1
     material: {fileID: -8120370872677372087, guid: 1ea0331d2651f8f4f83c7e992d1e7c49,
       type: 3}
     generatedTextures:
+    - {fileID: -714320107334116728, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
     - {fileID: 2553313241031203282, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
     - {fileID: -2011546824344090589, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
     - {fileID: -5170667047973793747, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
+    - {fileID: -7249465597505780180, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
+    - {fileID: -4659775282778892590, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
     - {fileID: -4400431151244244659, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
+    - {fileID: 2536820300941135955, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}
     - {fileID: 3999978202708476837, guid: 1ea0331d2651f8f4f83c7e992d1e7c49, type: 3}

@@ -14,17 +14,16 @@ ScriptedImporter:
   - graphLabel: Rubber Vulcanized Raw
     prototypeName: Rubber Vulcanized Raw
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://rubber_vulcanized_raw\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"219668478\" type=\"8\" value=\"9,9\" />\n 
-      <presetinput identifier=\"roughness\" uid=\"2083496708\" type=\"0\" value=\"0.407\"
-      />\n  <presetinput identifier=\"age\" uid=\"1931905127\" type=\"0\" value=\"0.293\"
-      />\n </sbspreset>\n"
+      identifier=\"$outputsize\" uid=\"219668478\" type=\"8\" value=\"9,9\" />\n
+      </sbspreset>\n"
     shaderName: Universal Render Pipeline/Lit
     materialProperties:
       shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-      shaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP
+      shaderKeywords: _GLOSSINESSMAP _HEIGHTMAP _METALLICSPECGLOSSMAP _NA_DIFFUSE
+        _NORMALMAP _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
@@ -113,7 +112,7 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
       - name: _SpecColor
-        color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     outputDescList:
     - outputName: diffuse
       identifier: diffuse
@@ -272,18 +271,14 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    - label: StandAlone
-      bOverride: 1
-      bLockRatio: 1
-      textureWidth: 512
-      textureHeight: 512
-      textureFormatMode: 0
-      normalCompressed: 1
-      bGenerateOnLoad: 1
     material: {fileID: -8390873829039938826, guid: baab0be2893cc8347a5342c11771adf6,
       type: 3}
     generatedTextures:
+    - {fileID: 8668226835858227816, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
     - {fileID: 5667326895080941885, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
     - {fileID: -7602483041576694865, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
     - {fileID: -7791070308927284135, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
+    - {fileID: -6663645728921397317, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
+    - {fileID: -8519793726218059666, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
     - {fileID: 6473305768354710942, guid: baab0be2893cc8347a5342c11771adf6, type: 3}
+    - {fileID: 5354183112055266904, guid: baab0be2893cc8347a5342c11771adf6, type: 3}

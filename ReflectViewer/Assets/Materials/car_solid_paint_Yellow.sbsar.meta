@@ -14,18 +14,17 @@ ScriptedImporter:
   - graphLabel: Car Solid Paint Yellow
     prototypeName: Car Solid Paint
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://car_solid_paint\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"2285768404\" type=\"8\" value=\"9,9\" />\n 
-      <presetinput identifier=\"color\" uid=\"4268891856\" type=\"2\" value=\"0.886275,0.822221,0.0392157\"
-      />\n  <presetinput identifier=\"roughness\" uid=\"4268891665\" type=\"0\" value=\"0.088\"
-      />\n  <presetinput identifier=\"orange_peel\" uid=\"4268884150\" type=\"0\"
-      value=\"0.036\" />\n </sbspreset>\n"
+      <presetinput identifier=\"color\" uid=\"4268891856\" type=\"2\" value=\"0.886275,0.799335,0.0392157\"
+      />\n </sbspreset>\n"
     shaderName: Universal Render Pipeline/Lit
     materialProperties:
       shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-      shaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP
+      shaderKeywords: _GLOSSINESSMAP _HEIGHTMAP _METALLICSPECGLOSSMAP _NA_DIFFUSE
+        _NORMALMAP _ROUGHNESSMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
@@ -114,7 +113,7 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
       - name: _SpecColor
-        color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     outputDescList:
     - outputName: diffuse
       identifier: diffuse
@@ -279,12 +278,16 @@ ScriptedImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormatMode: 0
-      normalCompressed: 1
+      normalCompressed: 0
       bGenerateOnLoad: 1
     material: {fileID: 5890058081465777557, guid: a5926d65de71aa840ae9e087d62f0ad9,
       type: 3}
     generatedTextures:
+    - {fileID: -2110454489911028512, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
     - {fileID: 1194072100063262990, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
     - {fileID: 1325229427042124011, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
     - {fileID: -2371804415942917322, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
+    - {fileID: 3863024109093544081, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
+    - {fileID: -4499303911002336460, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
     - {fileID: 5574587031927600606, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
+    - {fileID: -4452427369327198598, guid: a5926d65de71aa840ae9e087d62f0ad9, type: 3}
