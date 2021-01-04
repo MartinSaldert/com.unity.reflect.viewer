@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Unity.Reflect.Viewer.UI;
 using UnityEngine.InputSystem;
@@ -78,7 +78,6 @@ namespace UnityEngine.Reflect.Viewer
 
         void StopTeleport()
         {
-            GetComponentInParent<XRRig>().transform.position = m_TeleportationTarget.transform.position;
             m_TeleportationTarget.gameObject.SetActive(false);
             m_XrRayInteractor.lineType = XRRayInteractor.LineType.StraightLine;
             m_XrRayInteractor.enableUIInteraction = true;

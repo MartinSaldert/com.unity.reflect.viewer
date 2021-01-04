@@ -502,6 +502,8 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
+  m_AnchorControlDeadzone: 0.75
+  m_AnchorControlOffAxisDeadzone: 0.3
   m_PositionAction:
     m_UseReference: 1
     m_Action:
@@ -685,11 +687,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -705,11 +702,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -721,6 +713,16 @@ PrefabInstance:
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
         type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
@@ -1284,11 +1286,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1304,11 +1301,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1320,6 +1312,16 @@ PrefabInstance:
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
         type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 965631154444117448, guid: d1379782d53b6bb41840eb4b6d6ce5bc,
@@ -1422,7 +1424,6 @@ GameObject:
   - component: {fileID: 1753218613}
   - component: {fileID: 1753218617}
   - component: {fileID: 1753218618}
-  - component: {fileID: 1753218619}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -1748,6 +1749,8 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
+  m_AnchorControlDeadzone: 0.75
+  m_AnchorControlOffAxisDeadzone: 0.3
   m_PositionAction:
     m_UseReference: 1
     m_Action:
@@ -1811,10 +1814,10 @@ MonoBehaviour:
   m_HapticDeviceAction:
     m_UseReference: 0
     m_Action:
-      m_Name: Haptic Device
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 26926c02-a397-4c64-8ff5-1765b306866d
+      m_Id: 
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1875,24 +1878,6 @@ MonoBehaviour:
     type: 3}
   m_ControllerTransform: {fileID: 1753218612}
   m_SelectionTarget: {fileID: 2106053745}
-  m_TriggerThreshold: 0.5
---- !u!114 &1753218619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753218611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f199b42029b79439022937aa49daeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InputActionAsset: {fileID: -944628639613478452, guid: 603b1280fd69e48d9b1e45442fbc61fe,
-    type: 3}
-  m_TriggerThreshold: 0.5
-  pressedLastFrame: 0
-  isPressing: 0
 --- !u!1 &1954097216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,7 +2004,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 2149646135
+    m_Bits: 4294967295
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
