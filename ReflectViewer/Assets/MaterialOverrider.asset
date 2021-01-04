@@ -13,5 +13,46 @@ MonoBehaviour:
   m_Name: MaterialOverrider
   m_EditorClassIdentifier: 
   materialOverrides:
+  - property: Glass
+    material: {fileID: 2100000, guid: 0f13bf0f616496343a9d0be09eb37aac, type: 2}
+  - property: Steel
+    material: {fileID: 5867698853317176381, guid: 1226806ef11d2894d81261f1f5f68f72,
+      type: 3}
+  - property: Stainless steel
+    material: {fileID: 3142238835416639629, guid: 75588af9b93cc76448d4fd9dbcdbf3fa,
+      type: 3}
+  - property: Iron
+    material: {fileID: -3573851734820868402, guid: 1a9bf041a63ce0740b8643841b425eb9,
+      type: 3}
+  - property: Copper
+    material: {fileID: -8120370872677372087, guid: 1ea0331d2651f8f4f83c7e992d1e7c49,
+      type: 3}
   - property: Aluminum
-    material: {fileID: 2100000, guid: 6fe6dafdbb51db740b1b99591293b5df, type: 2}
+    material: {fileID: -1814626148734360981, guid: 0ccf5295ab543f049b9791819073addb,
+      type: 3}
+  - property: Brushed Aluminum
+    material: {fileID: 323242964138368848, guid: 3cad703704e96f74cbd35269a1e11e54,
+      type: 3}
+  - property: Lacquer black
+    material: {fileID: -7498088582096883899, guid: 6020833ce8427aa4f9ec0dcc52c99e39,
+      type: 3}
+  - property: Lacquer White
+    material: {fileID: 3061062152298054265, guid: 0572ce94caae2174abc5dc42f4404106,
+      type: 3}
+  - property: Lacquer yellow
+    material: {fileID: 5890058081465777557, guid: a5926d65de71aa840ae9e087d62f0ad9,
+      type: 3}
+  - property: Lacquer red
+    material: {fileID: 7643538334807729409, guid: 247b0d8869ffbd4419dd6807618e4521,
+      type: 3}
+  - property: Lacquer Blue
+    material: {fileID: 5970721799932818398, guid: c94c20ba60774ce4b9b178308cc60042,
+      type: 3}
+  - property: Rubber black
+    material: {fileID: -8390873829039938826, guid: baab0be2893cc8347a5342c11771adf6,
+      type: 3}
+  - property: Concrete floor
+    material: {fileID: -2323551661017329444, guid: d5e4e7ff5fa93c842b995599b17bf67a,
+      type: 3}
+  - property: Plastic black
+    material: {fileID: 2100000, guid: 8ef0497cfdc1aa34db95182c0b27e30a, type: 2}

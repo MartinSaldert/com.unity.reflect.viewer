@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Active: 1
   m_Shader: {fileID: 4800000, guid: f7817933a512e4c36a78b7adfbc79f6b, type: 3}
   m_Settings:
-    renderPassEvent: 400
+    renderPassEvent: 350
     Downsample: 0
     Source: 0
     NormalSamples: 2

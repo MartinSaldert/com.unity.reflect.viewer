@@ -54,6 +54,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6de2c8be4cf4b734ca3706ac2c1bfbd6,
         type: 3}
+    - target: {fileID: 5943930209111762685, guid: 473baf46eceace940a99828b642f8ef7,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943930209111762685, guid: 473baf46eceace940a99828b642f8ef7,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943930209111762685, guid: 473baf46eceace940a99828b642f8ef7,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431689930018894364, guid: 473baf46eceace940a99828b642f8ef7,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 2149646135
+      objectReference: {fileID: 0}
     - target: {fileID: 7431689930018894366, guid: 473baf46eceace940a99828b642f8ef7,
         type: 3}
       propertyPath: m_Pivot.x
