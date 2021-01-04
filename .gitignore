@@ -21,7 +21,9 @@ build.bat.meta
 [Ll]ibrary/
 [Tt]emp/
 [Ll]ogs/
+[Ee]xport/
 [Oo]bj/
+
 Packages/com.unity.mars/
 
 *.csproj
