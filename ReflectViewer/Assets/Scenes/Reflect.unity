@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 9ab16cdf0d8154c45ba002eb047a828b,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3986,6 +3986,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1694127961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &348660809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8870766791685430144, guid: 0a49b42693a704b11970cbfe518b2bdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8291363754614563229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &348660813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348660809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208b6b0bc6dfbc04aa2016bcb01cd8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &376012911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21360,6 +21378,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6848478788605295877, guid: 8c3d9c0af3991482082caedad3cdf859,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 2149646135
+      objectReference: {fileID: 0}
     - target: {fileID: 6848478788605295879, guid: 8c3d9c0af3991482082caedad3cdf859,
         type: 3}
       propertyPath: m_Enabled
@@ -21585,9 +21608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TapDetectorRect: {fileID: 554154334}
   m_SyncButton: {fileID: 265065278}
-  m_SyncEnabledSprite: {fileID: 21300000, guid: e217b5abae2c340ffa610cdebb0e6a0c,
+  m_SyncEnabledSprite: {fileID: 21300000, guid: 3f7d7dd6a0642bf4c8eb455e72668b9d,
     type: 3}
-  m_SyncDisabledSprite: {fileID: 21300000, guid: 7458ddc0e422e467a81fddf4dcab677c,
+  m_SyncDisabledSprite: {fileID: 21300000, guid: 47762f3c4c7cac54c98903cec579c9af,
     type: 3}
 --- !u!1 &6239115037045656805
 GameObject:
@@ -22889,7 +22912,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 8291363754614563229}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 348660809}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}

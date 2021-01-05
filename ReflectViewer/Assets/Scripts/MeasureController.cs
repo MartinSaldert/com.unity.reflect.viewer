@@ -44,6 +44,10 @@ public class MeasureController : MonoBehaviour
         if (toolState != lastFrameTool)
         {
             ResetMeasurement();
+            lastFrameTool = toolState;
+            VRInteraction vri = FindObjectOfType<VRInteraction>();
+            vri.pressedLastFrame = false;
+            return;
         }
         
         if (toolState == MeasureTool.Delete)
@@ -63,7 +67,7 @@ public class MeasureController : MonoBehaviour
             {
                 downPoint = Input.mousePosition;
             }
-            print(downPoint);
+            //print(downPoint);
             VRInteraction vri = FindObjectOfType<VRInteraction>();
             if ((Input.GetMouseButtonUp(0) && Vector2.Distance(downPoint, Input.mousePosition) < 40f) || (vri && vri.pressedLastFrame && !vri.isPressing))
             {

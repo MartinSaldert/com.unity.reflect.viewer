@@ -157,6 +157,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
   - {fileID: 0}
+  - {fileID: -7556364060594716472, guid: 765d7aee5e60ad14c80f0e02d1f6e4c5, type: 2}
+  - {fileID: 11400000, guid: f8595a9732671fb43ac25fb91ddfd1ee, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -203,7 +205,7 @@ PlayerSettings:
     Standalone: com.symetri.sovelia.visualizer.viewer
     iPhone: com.unity.reflect
   buildNumber:
-    Standalone: 8
+    Standalone: 16
     iPhone: 0
   AndroidBundleVersionCode: 8
   AndroidMinSdkVersion: 24

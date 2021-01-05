@@ -6,6 +6,7 @@ using Unity.Reflect.Viewer.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.Reflect.Viewer;
 
 public class VisibilityController : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class VisibilityController : MonoBehaviour
     public LayerMask defaultLayer;
     public LayerMask ghostLayer;
     public Canvas secondaryMenu;
+    [HideInInspector]
+    public SpatialSelector m_ObjectSelector;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,7 @@ public class VisibilityController : MonoBehaviour
         m_HideStuffButton.buttonClicked += OnHideStuffButtonClicked;
         m_GhostAllButton.buttonClicked += OnGhostAllButtonClicked;
         m_ShowAllButton.buttonClicked += OnShowAllButtonClicked;
+        m_ObjectSelector = new SpatialSelector();
     }
     Vector2 downPoint;
     bool showAllThisFrame = false;
@@ -91,8 +95,13 @@ public class VisibilityController : MonoBehaviour
 
         if (m_CurrentToolState != data.toolState)
         {
+            ToolType old = m_CurrentToolState.activeTool;
             m_CurrentToolState = data.toolState;
-            
+            if (old != m_CurrentToolState.activeTool && m_CurrentToolState.activeTool == ToolType.HideStuff)
+            {
+                VRInteraction vri = FindObjectOfType<VRInteraction>();
+                vri.pressedLastFrame = false;
+            }
         }
     }
 
@@ -126,7 +135,8 @@ public class VisibilityController : MonoBehaviour
                 FindObjectOfType<SoveliaRightSideBarController>().m_MeasureButton.selected = false;
                 FindObjectOfType<SoveliaRightSideBarController>().m_SelectButton.selected = false;
             }
-            UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SetObjectPicker, FindObjectOfType<SoveliaRightSideBarController>().m_ObjectSelector));
+            //UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SetObjectPicker, FindObjectOfType<SoveliaRightSideBarController>().m_ObjectSelector));
+            UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SetObjectPicker, m_ObjectSelector));
             toolState.activeTool = ToolType.HideStuff;
             m_HideStuffButton.selected = true;
         }
@@ -165,6 +175,13 @@ public class VisibilityController : MonoBehaviour
         foreach (Renderer r in root.GetComponentsInChildren<Renderer>())
         {
             r.enabled = true;
+        }
+        if (m_HideStuffButton.selected)
+        {
+            print("Disable Hide Stuff tool");
+            var toolState = UIStateManager.current.stateData.toolState;
+            toolState.activeTool = ToolType.None;
+            m_HideStuffButton.selected = false;
         }
         if (m_GhostAllButton.selected)
         {

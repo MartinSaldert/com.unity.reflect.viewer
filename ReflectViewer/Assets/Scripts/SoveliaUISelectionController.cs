@@ -82,6 +82,7 @@ public class SoveliaUISelectionController : UISelectionController
         {
             if (controller)
             {
+                FindObjectOfType<VRInteraction>().HideVisual();
                 ray = new Ray(controller.position, controller.forward);
             }
             else
@@ -109,6 +110,10 @@ public class SoveliaUISelectionController : UISelectionController
         print("Camera: " + m_Camera);
         m_ObjectPicker.Pick(ray, m_Results);
         List<RaycastHit> l = ResultSelect();
+        if (UIStateManager.current.stateData.navigationState.navigationMode == NavigationMode.VR)
+        {
+            FindObjectOfType<VRInteraction>().ShowVisual();
+        }
         if (l.Count > 0)
         {
             foreach (RaycastHit rh in l)
