@@ -157,8 +157,9 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
   - {fileID: 0}
-  - {fileID: -7556364060594716472, guid: 765d7aee5e60ad14c80f0e02d1f6e4c5, type: 2}
   - {fileID: 11400000, guid: f8595a9732671fb43ac25fb91ddfd1ee, type: 2}
+  - {fileID: 4800000, guid: e7c77f6eaab324a819efdc13b8125a39, type: 3}
+  - {fileID: -8133277338984914088, guid: 765d7aee5e60ad14c80f0e02d1f6e4c5, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -203,7 +204,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.Unity.Reflect.Viewer
     Standalone: com.symetri.sovelia.visualizer.viewer
-    iPhone: com.unity.reflect
+    iPhone: com.symetri.sovelia.visualizer.viewer
   buildNumber:
     Standalone: 16
     iPhone: 0
@@ -271,7 +272,7 @@ PlayerSettings:
   metalAPIValidation: 1
   iOSRenderExtraFrameOnPause: 0
   iosCopyPluginsCodeInsteadOfSymlink: 0
-  appleDeveloperTeamID: BVPN9UFA9B
+  appleDeveloperTeamID: GCGUXW38RF
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
   iOSManualSigningProvisioningProfileType: 0
@@ -406,36 +407,6 @@ PlayerSettings:
   - m_BuildTarget: iPhone
     m_Icons:
     - m_Textures:
-      - {fileID: 2800000, guid: f3773f40ed76ef549bb1850b00bfdb90, type: 3}
-      m_Width: 180
-      m_Height: 180
-      m_Kind: 0
-      m_SubKind: iPhone
-    - m_Textures:
-      - {fileID: 2800000, guid: 4ec42a983fc3bee4185a82e913f8df1a, type: 3}
-      m_Width: 120
-      m_Height: 120
-      m_Kind: 0
-      m_SubKind: iPhone
-    - m_Textures:
-      - {fileID: 2800000, guid: a74136a3ac60cc94da617308cbfaba78, type: 3}
-      m_Width: 167
-      m_Height: 167
-      m_Kind: 0
-      m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: 2030daf7f6463c643b1c9f94508a6906, type: 3}
-      m_Width: 152
-      m_Height: 152
-      m_Kind: 0
-      m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: 4d6a0f9d3b4c28f4dbd4d189a26a891b, type: 3}
-      m_Width: 76
-      m_Height: 76
-      m_Kind: 0
-      m_SubKind: iPad
-    - m_Textures:
       - {fileID: 2800000, guid: 4ec42a983fc3bee4185a82e913f8df1a, type: 3}
       m_Width: 120
       m_Height: 120
@@ -519,6 +490,36 @@ PlayerSettings:
       m_Height: 1024
       m_Kind: 4
       m_SubKind: App Store
+    - m_Textures:
+      - {fileID: 2800000, guid: f3773f40ed76ef549bb1850b00bfdb90, type: 3}
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: 4ec42a983fc3bee4185a82e913f8df1a, type: 3}
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: a74136a3ac60cc94da617308cbfaba78, type: 3}
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 2030daf7f6463c643b1c9f94508a6906, type: 3}
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 4d6a0f9d3b4c28f4dbd4d189a26a891b, type: 3}
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
