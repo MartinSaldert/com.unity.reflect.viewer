@@ -5,6 +5,7 @@ using TMPro;
 using Unity.Reflect.Viewer.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Reflect.Viewer;
 using UnityEngine.UI;
 
 public class MeasureController : MonoBehaviour
@@ -16,6 +17,8 @@ public class MeasureController : MonoBehaviour
     private List<GameObject> measurePoints;
     MeasureTool lastFrameTool;
     private List<Vector3> savedPoints;
+    [HideInInspector]
+    public SpatialSelector m_ObjectSelector;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class MeasureController : MonoBehaviour
         {
             lines = GetComponent<LineRenderer>();
         }
+        m_ObjectSelector = new SpatialSelector();
     }
 
     Vector2 downPoint;
