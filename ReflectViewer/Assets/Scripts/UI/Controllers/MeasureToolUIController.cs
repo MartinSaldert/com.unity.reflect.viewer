@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using SharpFlux;
 using Unity.TouchFramework;
 using UnityEngine;
@@ -67,6 +67,7 @@ namespace Unity.Reflect.Viewer.UI
             var toolState = UIStateManager.current.stateData.toolState;
             toolState.measureTool = measureTool;
             UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SetToolState, toolState));
+            UIStateManager.current.Dispatcher.Dispatch(Payload<ActionTypes>.From(ActionTypes.SetObjectPicker, FindObjectOfType<MeasureController>().m_ObjectSelector));
         }
     }
 }

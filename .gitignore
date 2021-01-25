@@ -47,3 +47,4 @@ Native~/**/x64/
 
 #Fastlane
 ReflectViewer/builds/**
+ReflectViewer/Assets/StreamingAssets.meta
